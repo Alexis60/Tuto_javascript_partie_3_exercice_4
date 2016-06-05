@@ -13,8 +13,8 @@
         <script>
             function verif()
             {
-                var password = document.getElementById("motdepasse").value;
-                var confirm = document.getElementById("confirmation").value;
+                var password = document.getElementById("motdepasse");
+                var confirm = document.getElementById("confirmation");
                 if (password.value === confirm.value)
                 {
                     password.style.borderStyle = "solid";
@@ -23,11 +23,10 @@
                     confirm.style.borderStyle = "solid";
                     confirm.style.borderColor = "green";
                     confirm.style.borderWidth = "3px";
-                    
-                }
-                else
+
+                } else
+
                 {
-                    {
                     confirm.style.borderStyle = "solid";
                     confirm.style.borderColor = "red";
                     confirm.style.borderWidth = "3px";
@@ -35,7 +34,7 @@
                     password.style.borderColor = "red";
                     password.style.borderWidth = "3px";
                 }
-                }
+
 
             }
 
